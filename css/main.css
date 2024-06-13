@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*======================== start navbar =========================*/
+
+
+.white{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+nav{
+    z-index: 9999999999999;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.nav-link{
+    font-weight: 600;
+    /* position: relative; */
+}
+
+/* .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    transition: width 2s;
+} */
+
+a.nav-link:hover{
+    width: 0%;
+}
+
+.nav-link [active]{
+    color: white;
+}
+
+
+.nav-item{
+    padding: 0px 5px;
+}
+
+/*======================== end navbar =========================*/
+
+.hero{
+    background-image: url(../img/DevFolio\ images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero .fsh2{
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.hero .fsp{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.bg-opacity-25{
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+
+.about-text h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1e1e1e;
+    position: relative;
+}
+
+.about-text h3::after{
+    content: "";
+    width: 25%;
+    height: 3px;
+    background-color: #0078FF;
+    left: 0;
+    top: 40px;
+    position: absolute;
+    margin-top: 5px;
+}
+
+.about-text p{
+    font-size: 1.25rem;
+    color: #4e4e4e;
+}
+
+
+
+/* ================ start section services ===============  */
+
+.head h2.fs{
+    font-size: 48px;
+}
+
+.head p{
+    position: relative;
+}
+
+.head p::after{
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    left: 50%;
+    top: 40px;
+    background-color: #0078FF;
+    transform: translate(-50%);
+    
+}
+
+.services,
+.about-me{
+    background-color: #F5F5F5;
+}
+
+.card{
+    box-shadow: 0px 5px 10px gray;
+}
+
+.circle{
+    width: 120px;
+    height: 120px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 8px solid #0078FF;
+    position: relative;
+    transition: background-color 0.5s , border .5s;
+}
+
+.circle i {
+    font-size: 30px;
+    transition: color .1s;
+}
+
+.card:hover .circle{
+    background-color: #0078FF;
+    border: 8px solid #f1f1f193;
+    
+}
+
+.card:hover .circle i {
+    color: white;
+}
+
+.card h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* ================ end section services ===============  */
+
+/* ================ start section four(Blue) ===============  */
+
+.numbers{
+    background-image: url(../img/DevFolio\ images/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 70vh; */
+
+}
+
+.numbers .overlay{
+    background-color: #086cdf8e ;
+    /* height: 70vh; */
+    padding: 50px 0px;
+}
+
+.numbers .overlay .container .vh{
+    /* height: 70vh; */
+}
+
+
+.circle-num{
+    width: 80px;
+    height: 80px;
+    background-color: #0077ff4d;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 7px solid #f2f3f3;
+}
+
+.circle-num i{
+    font-size: 30px;
+}
+
+.text-num span{
+    font-size: 32px;
+}
+
+.test{
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+}
+
+/* ================ end section four(Blue) ===============  */
+
+/* ================ start section portfolio ================  */
+
+.card-portfolio img{
+    transition: transform 0.5s;
+}
+
+.card-portfolio:hover img{
+    transform: scale(1.2);
+}
+
+.plus i{
+    font-size: 35px;
+    color: #0078FF;
+}
+
+/* ================ end section portfolio ================  */
+
+/* ================ start section carousel ================  */
+
+.carousel{
+    
+    background-image:linear-gradient(#0077ff86, #0077ff86) ,  url(../img/DevFolio\ images/overlay-bg.jpg) ; 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.carousel .overlay-carousel{
+    background-color: #0077ff94;
+}
+
+.img-carousel {
+    width: 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.content-carousel h2{
+    font-size: 22px;
+    font-weight: 60;
+
+}
+
+.content-carousel p{
+    font-size: 20px;
+}
+
+.carousel-indicators{
+    bottom: 115px;
+}
+
+
+
+/* ================ end section carousel ================  */
+
+/* ================ start section blog ================  */
+
+.card-footer img{
+    width: 35px;
+    height: 35px;
+    
+}
+
+.card-blog span{
+    width: fit-content;
+    height: fit-content;
+    background-color: #0078FF;
+    bottom:-10px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 11px;
+    
+}
+
+.card-body h5{
+    font-size: 21;
+    font-weight: 500;
+    color: #1e1e1e;
+    transition: color 0.5s;
+}
+
+.card-body h5:hover{
+    color: #0078FF;
+}
+
+.lfooter a{
+    transition: color 0.5s;
+    color: black;
+    
+}
+
+.lfooter a:hover{
+    color: #0078FF;
+}
+
+
+/* ================ end section blog ================  */
+
+/* ================ start section contact us  ================  */
+
+.contact-us{
+    background-image: url(../img/DevFolio\ images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 100vh; */
+    /* overflow-y: visible; */
+}
+
+.overlay-contact-us{
+    padding: 50px 0px;
+    background-color: #0077ff8c;
+}
+
+form button.btn{
+    font-size: 19px;
+    transition: background-color .3s , border 0.3s ;
+}
+
+form .btn:hover{
+    background-color: #0077ff91;
+    border: 10px solid rgba(202, 15, 15, 0.562);
+} 
+
+ul.social-icon li{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #0078FF;
+    transition: background-color 0.5s , border 0.5;
+}
+
+.social-icon li:hover{
+    background-color: #0078FF;
+    border: 3px solid rgba(255, 255, 255, 0.596);
+}
+
+
+.social-icon li i{
+    font-size: 20px;
+    transition: color 0.1s;
+}
+
+.social-icon li:hover i{
+    color: white;
+}
+
+
+.get-ul li i{
+    color: #0078FF;
+}
+
+.contact-us h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1e1e1e;
+    position: relative;
+}
+
+.contact-us h3::after{
+    content: "";
+    width: 25%;
+    height: 3px;
+    background-color: #0078FF;
+    left: 0px;
+    top: 40px;
+    position: absolute;
+    margin-top: 5px;
+}
+/* ================ end section contact us  ================  */
